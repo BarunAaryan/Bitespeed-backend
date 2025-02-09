@@ -26,8 +26,18 @@ To install the project, clone the repository and run the following commands:
 npm install
 ```
 
+## Installation
+To install the project, clone the repository and run the following commands:
+
+```bash
+npm install
+npm run build
+npm run postinstall
+```
+
 ## Usage
 To start the application, run:
+
 
 ```bash
 npm start
