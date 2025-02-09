@@ -1,7 +1,7 @@
 # Bitespeed
 
 ## Description
-Bitespeed collects contact details from shoppers for a personalized customer experience. It faces a unique challenge: linking different orders made with different contact information to the same person. Bitespeed keeps track of the collected contact information in a relational database table named **`Contact`**.
+Bitespeed is a backend service designed to collect and manage contact details from shoppers to provide a personalized customer experience. The service addresses the challenge of linking different orders made with varying contact information to the same individual. This is achieved by maintaining a relational database table named **`Contact`** that consolidates and links contact information.
 
 ### Contact Table Structure
 ```tsx
