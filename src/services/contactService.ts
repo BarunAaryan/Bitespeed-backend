@@ -58,6 +58,20 @@ export const identifyContact = async (email?: string, phoneNumber?: string) => {
     if (contact.linkPrecedence === 'secondary') secondaryContactIds.add(contact.id);
   }
 
+  // Add the new email if it doesn't exist
+  if (email && !emails.has(email)) {
+    emails.add(email);
+    const newSecondaryContact = await prisma.contact.create({
+      data: {
+        email,
+        phoneNumber,
+        linkedId: primaryContact.id,
+        linkPrecedence: 'secondary'
+      }
+    });
+    secondaryContactIds.add(newSecondaryContact.id);
+  }
+
   return {
     primaryContactId: primaryContact.id,
     emails: Array.from(emails),
