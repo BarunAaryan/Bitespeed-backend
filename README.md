@@ -92,6 +92,10 @@ To check if the service is working properly, follow these steps:
    ```
 5. **Send the Request**:
    - Click the "Send" button to send the request to your server.
+   
+   **Demo Output**
+     ![Screenshot 2025-02-09 222408](https://github.com/user-attachments/assets/38372a0b-6746-4746-bbe3-bb6f29a2c1e7)
+
 
 ## Dependencies
 - `@prisma/client`: ^6.3.1
